@@ -9,5 +9,9 @@ public class Tile : ImageButton
     BackgroundColor = color;
     SetValue(Grid.RowProperty, row);
     SetValue(Grid.ColumnProperty, col);
+    RotationY = 180;
+    Opacity = 0;
   }
+
+  public bool Flipped => RotationY != 180;
 }
