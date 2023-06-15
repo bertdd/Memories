@@ -4,17 +4,8 @@
              x:Class="Memories.MainPage">
 
   <ScrollView>
-    <Grid>
-      <Grid.RowDefinitions>
-        <RowDefinition Height="150"/>
-        <RowDefinition Height="150"/>
-        <RowDefinition Height="150"/>
-      </Grid.RowDefinitions>
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="150"/>
-        <ColumnDefinition Width="150"/>
-        <ColumnDefinition Width="150"/>
-      </Grid.ColumnDefinitions>
+    <Grid x:Name="grid">
+
       <ImageButton Source="don.png" Grid.Row="1" Grid.Column="2" 
                    BackgroundColor="Green"  Clicked="ImageButton_Clicked"/>
       <ImageButton Source="lionel.png" Grid.Row="0" Grid.Column="1" 
